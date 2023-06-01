@@ -2,29 +2,29 @@
   <section class="upperData">
     <img src="../assets/images/hot.png" alt="image that represents hot weather" class="backgroundWeatherImage" *ngIf="14 > 15">
     <img src="../assets/images/cold.jpg" alt="image that represents cold weather" class="backgroundWeatherImage" *ngIf="14 <= 15">
-    <div class="placeAndTemperature">
+    <div class="weatherData">
       <p class="place">Wellington</p>
-      <h1 class="temperature">20ºC</h1>
+      <h1 class="temperature">{{ 14.40 | number: '1.0-0' }}°C</h1>
     </div>
   </section>
   <section class="lowerData">
     <p class="moreInfo">More Information</p>
     <article class="stats">
       <div class="stat">
-        <img src="../assets/images/alta-temperatura.png" alt="icon" class="statIcon">
-        <p class="number">19º C</p>
+        <img src="../assets/images/baja-temperatura.png" alt="icon" class="statIcon">
+        <p class="number">19°C</p>
       </div>
       <div class="stat">
         <img src="../assets/images/alta-temperatura.png" alt="icon" class="statIcon">
-        <p class="number">19º C</p>
+        <p class="number">19°C</p>
       </div>
       <div class="stat">
-        <img src="../assets/images/alta-temperatura.png" alt="icon" class="statIcon">
-        <p class="number">19º C</p>
+        <img src="../assets/images/humedad.png" alt="icon" class="statIcon">
+        <p class="number">19°C</p>
       </div>
       <div class="stat">
-        <img src="../assets/images/alta-temperatura.png" alt="icon" class="statIcon">
-        <p class="number">19º C</p>
+        <img src="../assets/images/ventoso.png" alt="icon" class="statIcon">
+        <p class="number">19°C</p>
       </div>
     </article>
   </section>
