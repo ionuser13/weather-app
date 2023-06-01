@@ -19,14 +19,70 @@ html {
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    padding-top: 6rem;
     background-color: var(--blue-1);
     font-size: 1.6rem;
+    color: var(--white)
 }
 .container {
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     height: 80vh;
+    margin: 0 auto;
     background-color: var(--blue-2);
     border-radius: 2rem;
     box-shadow: 1rem 1rem 1rem var(--shadow-dark);
+}
+.upperData {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+.backgroundWeatherImage {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+}
+.lowerData {
+    height: 50%;
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+.stats {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    background-color: var(--blue-2);
+    flex: 1;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    place-items: center center;
+}
+.stat {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: fit-content;
+    width: 100%;
+}
+.statIcon {
+    width: 60px;
+}
+.placeAndTemperature {
+    position: absolute;
+    z-index: 1;
+    left: 30%;
+    top: 36%;
+    text-align: center;
+}
+.temperature {
+    font-size: 6rem;
 }
